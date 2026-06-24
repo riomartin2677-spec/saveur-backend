@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/payment")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://saveur-frontend.vercel.app"})
 public class PaymentController {
 
     @Value("${razorpay.key.id}")
